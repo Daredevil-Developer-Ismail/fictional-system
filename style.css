@@ -1,0 +1,70 @@
+    * {
+
+      margin: 0;
+      padding: 0;
+    }
+
+    #filter-wrapper {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px
+    }
+
+    button {
+
+      padding: 10px;
+      background: transparent;
+      border: 2px solid black;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .telemon-wrapper {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    .telemon-card {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .telemon-card img {
+
+      border-radius: 30px;
+      width: 100%;
+    }
+
+    .normal,
+    .fire,
+    .water,
+    .grass,
+    .electric,
+    .ghost,
+    .dark,
+    .dragon,
+    .steel,
+    .psychic,
+    .fairy,
+    .flying,
+    .rock,
+    .bug,
+    .fighting,
+    .poison,
+    .ground,
+    .ice {
+      display: none;
+    }

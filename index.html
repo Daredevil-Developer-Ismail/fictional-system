@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemons Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="filter-wrapper">
+            <button type="button" id="normal" onclick="filter('normal')">Normal</button>
+            <button type="button" id="fire" onclick="filter('fire')">Fire</button>
+            <button type="button" id="water" onclick="filter('water')">Water</button>
+            <button type="button" id="grass" onclick="filter('grass')">Grass</button>
+            <button type="button" id="rock" onclick="filter('rock')">Rock</button>
+            <button type="button" id="ground" onclick="filter('ground')">Ground</button>
+            <button type="button" id="electric" onclick="filter('electric')">Electric</button>
+            <button type="button" id="ghost" onclick="filter('ghost')">Ghost</button>
+            <button type="button" id="dark" onclick="filter('dark')">Dark</button>
+            <button type="button" id="poison" onclick="filter('poison')">Poison</button>
+            <button type="button" id="fairy" onclick="filter('fairy')">Fairy</button>
+            <button type="button" id="psychic" onclick="filter('psychic')">Psychic</button>
+            <button type="button" id="bug" onclick="filter('bug')">Bug</button>
+            <button type="button" id="steel" onclick="filter('steel')">Steel</button>
+            <button type="button" id="fighting" onclick="filter('fighting')">Fighting</button>
+            <button type="button" id="ice" onclick="filter('ice')">Ice</button>
+            <button type="button" id="dragon" onclick="filter('dragon')">Dragon</button>
+            <button type="button" id="flying" onclick="filter('flying')">Flying</button>
+        </div>
+        <div class="telemon-wrapper">
+            <div class="telemon-card normal">
+                <img src="lapbun.jpeg" alt="lapbun.jpeg"/>
+                <button type="button" onclick="copy('Lapbun')">Lapbun</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="grezon.jpeg" alt="grezon.jpeg"/>
+                <button type="button" onclick="copy('Grezon')">Grezon</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="wasplout.jpeg" alt="wasplout.jpeg"/>
+                <button type="button" onclick="copy('Wasplout')">Wasplout</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="scaretus.jpeg" alt="scaretus.jpeg"/>
+                <button type="button" onclick="copy('Scaretus')">Scaretus</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="pinkock.jpeg" alt="pinkock.jpeg"/>
+                <button type="button" onclick="copy('Pinkock')">Pinkock</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="leefblu.jpeg" alt="leefblu.jpeg"/>
+                <button type="button" onclick="copy('Leefblu')">Leefblu</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="fogi.jpeg" alt="fogi.jpeg"/>
+                <button type="button" onclick="copy('Fogi')">Fogi</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="cook.jpeg" alt="cook.jpeg"/>
+                <button type="button" onclick="copy('Cook')">Cook</button>
+            </div>
+
+            <div class="telemon-card fire">
+                <img src="firfox.jpeg" alt="firfox.jpeg"/>
+                <button type="button" onclick="copy('Firfox')">Firfox</button>
+            </div>
+
+            <div class="telemon-card fire">
+                <img src="pyrolynx.jpeg" alt="pyrolynx.jpeg"/>
+                <button type="button" onclick="copy('Pyrolynx')">Pyrolynx</button>
+            </div>
+
+            <div class="telemon-card ghost">
+                <img src="spooklet.jpeg" alt="spooklet.jpeg"/>
+                <button type="button" onclick="copy('Spooklet')">Spooklet</button>
+            </div>
+
+            <div class="telemon-card ghost">
+                <img src="necrosoul.jpeg" alt="necrosoul.jpeg"/>
+                <button type="button" onclick="copy('Necrosoul')">Necrosoul</button>
+            </div>
+
+            <div class="telemon-card fire">
+                <img src="wagher.jpeg" alt="wagher.jpeg"/>
+                <button type="button" onclick="copy('Wagher')">Wagher</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="spoondle.jpeg" alt="spoondle.jpeg"/>
+                <button type="button" onclick="copy('Spoondle')">Spoondle</button>
+            </div>
+
+            <div class="telemon-card ghost">
+                <img src="phantomic.jpeg" alt="phantomic.jpeg"/>
+                <button type="button" onclick="copy('Phantomic')">Phantomic</button>
+            </div>
+
+            <div class="telemon-card ghost">
+                <img src="hauntokai.jpeg" alt="hauntokai.jpeg"/>
+                <button type="button" onclick="copy('Hauntokai')">Hauntokai</button>
+            </div>
+
+            <div class="telemon-card ghost">
+                <img src="voidviel.jpeg" alt="voidviel.jpeg"/>
+                <button type="button" onclick="copy('Voidviel')">Voidviel</button>
+            </div>
+
+            <div class="telemon-card dark">
+                <img src="eclipsoul.jpeg" alt="eclipsoul.jpeg"/>
+                <button type="button" onclick="copy('Eclipsoul')">Eclipsoul</button>
+            </div>
+
+            <div class="telemon-card dark">
+                <img src="darkhowl.jpeg" alt="darkhowl.jpeg"/>
+                <button type="button" onclick="copy('Darkhowl')">Darkhowl</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="norgon.jpeg" alt="norgon.jpeg"/>
+                <button type="button" onclick="copy('Norgon')">Norgon</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="semweb.jpeg" alt="semweb.jpeg"/>
+                <button type="button" onclick="copy('Semweb')">Semweb</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="bluepimal.jpeg" alt="bluepimal.jpeg"/>
+                <button type="button" onclick="copy('Bluepimal')">Bluepimal</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="yellowpimal.jpeg" alt="yellowpimal.jpeg"/>
+                <button type="button" onclick="copy('Yellowpimal')">Yellowpimal</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="rednorcha.jpeg" alt="rednorcha.jpeg"/>
+                <button type="button" onclick="copy('Rednorcha')">Rednorcha</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="fawine.jpeg" alt="fawine.jpeg"/>
+                <button type="button" onclick="copy('Fawine')">Fawine</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="pudgy.jpeg" alt="pudgy.jpeg"/>
+                <button type="button" onclick="copy('Pudgy')">Pudgy</button>
+            </div>
+
+            <div class="telemon-card normal">
+                <img src="meowlet.jpeg" alt="meowlet.jpeg"/>
+                <button type="button" onclick="copy('Meowlet')">Meowlet</button>
+            </div>
+
+            <div class="telemon-card fire">
+                <img src="emberkit.jpeg" alt="emberkit.jpeg"/>
+                <button type="button" onclick="copy('Emberkit')">Emberkit</button>
+            </div>
+
+            <div class="telemon-card fire">
+                <img src="coallimp.jpeg" alt="coallimp.jpeg"/>
+                <button type="button" onclick="copy('Coallimp')">Coallimp</button>
+            </div>
+
+            <div class="telemon-card fire">
+                <img src="scorchvin.jpeg" alt="scorchvin.jpeg"/>
+                <button type="button" onclick="copy('Scorchvin')">Scorchvin</button>
+            </div>
+
+            <div class="telemon-card fire">
+                <img src="flameling.jpeg" alt="flameling.jpeg"/>
+                <button type="button" onclick="copy('Flameling')">Flameling</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="aquasprout.jpeg" alt="aquasprout.jpeg"/>
+                <button type="button" onclick="copy('Aquasprout')">Aquasprout</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="ripplar.jpeg" alt="ripplar.jpeg"/>
+                <button type="button" onclick="copy('Ripplar')">Ripplar</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="pondie.jpeg" alt="pondie.jpeg"/>
+                <button type="button" onclick="copy('Pondie')">Pondie</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="Tsunathor.jpeg" alt="Tsunathor.jpeg"/>
+                <button type="button" onclick="copy('Tsunathor')">Tsunathor</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="wavino.jpeg" alt="wavino.jpeg"/>
+                <button type="button" onclick="copy('Wavino')">Wavino</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="bubbloom.jpeg" alt="bubbloom.jpeg"/>
+                <button type="button" onclick="copy('Bubbloom')">Bubbloom</button>
+            </div>
+
+            <div class="telemon-card water">
+                <img src="tidalin.jpeg" alt="tidalin.jpeg"/>
+                <button type="button" onclick="copy('Tidalin')">Tidalin</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="sapling.jpeg" alt="sapling.jpeg"/>
+                <button type="button" onclick="copy('Sapling')">Sapling</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="florion.jpeg" alt="florion.jpeg"/>
+                <button type="button" onclick="copy('Florion')">Florion</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="botanix.jpeg" alt="botanix.jpeg"/>
+                <button type="button" onclick="copy('Botanix')">Botanix</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="sylvanor.jpeg" alt="sylvanor.jpeg"/>
+                <button type="button" onclick="copy('Sylvanor')">Sylvanor</button>
+            </div>
+
+            <div class="telemon-card grass">
+                <img src="arborun.jpeg" alt="arborun.jpeg"/>
+                <button type="button" onclick="copy('Arborun')">Arborun</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="zippik.jpeg" alt="zippik.jpeg"/>
+                <button type="button" onclick="copy('Zippik')">Zippik</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="cyclotrix.jpeg" alt="cyclotrix.jpeg"/>
+                <button type="button" onclick="copy('Cyclotrix')">Cyclotrix</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="joltron.jpeg" alt="joltron.jpeg"/>
+                <button type="button" onclick="copy('Joltron')">Joltron</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="eletrix.jpeg" alt="eletrix.jpeg"/>
+                <button type="button" onclick="copy('Eletrix')">Eletrix</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="voltabust.jpeg" alt="voltabust.jpeg"/>
+                <button type="button" onclick="copy('Voltabust')">Voltabust</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="lumosurge.jpeg" alt="lumosurge.jpeg"/>
+                <button type="button" onclick="copy('Lumosurge')">Lumosurge</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="voltaro.jpeg" alt="voltaro.jpeg"/>
+                <button type="button" onclick="copy('Voltaro')">Voltaro</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="fulgore.jpeg" alt="fulgore.jpeg"/>
+                <button type="button" onclick="copy('Fulgore')">Fulgore</button>
+            </div>
+
+            <div class="telemon-card electric">
+                <img src="tynook.jpeg" alt="tynook.jpeg"/>
+                <button type="button" onclick="copy('Tynook')">Tynook</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="dirtlet.jpeg" alt="dirtlet.jpeg"/>
+                <button type="button" onclick="copy('Dirtlet.jpeg')">Dirtlet.jpeg</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="sandcub.jpeg" alt="sandcub.jpeg"/>
+                <button type="button" onclick="copy('Sandcup')">Sandcup</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="peblette.jpeg" alt="peblette.jpeg"/>
+                <button type="button" onclick="copy('Peblette')">Peblette</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="mudflare.jpeg" alt="mudflare.jpeg"/>
+                <button type="button" onclick="copy('Mudflare.jpeg')">Mudflare.jpeg</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="earthling.jpeg" alt="earthling.jpeg"/>
+                <button type="button" onclick="copy('Earthling')">Earthling</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="ashpup.jpeg" alt="ashpup.jpeg"/>
+                <button type="button" onclick="copy('Ashpup')">Ashpup</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="golam.jpeg" alt="golam.jpeg"/>
+                <button type="button" onclick="copy('Golam')">Golam</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="grougon.jpeg" alt="grougon.jpeg"/>
+                <button type="button" onclick="copy('Grougon')">Grougon</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="sonfury.jpeg" alt="sonfury.jpeg"/>
+                <button type="button" onclick="copy('sonfury.jpeg')">sonfury.jpeg</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="mudfury.jpeg" alt="mudfury.jpeg"/>
+                <button type="button" onclick="copy('Mudfury')">Mudfury</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="cragi.jpeg" alt="cragi.jpeg"/>
+                <button type="button" onclick="copy('Cragi')">Cragi</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="rocklow.jpeg" alt="rocklow.jpeg"/>
+                <button type="button" onclick="copy('Rocklow')">Rocklow</button>
+            </div>
+
+            <div class="telemon-card rock">
+                <img src="duneroar.jpeg" alt="duneroar.jpeg"/>
+                <button type="button" onclick="copy('Duneroar')">Duneroar</button>
+            </div>
+
+            <div class="telemon-card flying">
+                <img src="flitter.jpeg" alt="flitter.jpeg"/>
+                <button type="button" onclick="copy('Flitter')">Flitter</button>
+            </div>
+
+            <div class="telemon-card flying">
+                <img src="aether.jpeg" alt="aether.jpeg"/>
+                <button type="button" onclick="copy('aether.jpeg')">aether.jpeg</button>
+            </div>
+
+            <div class="telemon-card flying">
+                <img src="sard.jpeg" alt="sard.jpeg"/>
+                <button type="button" onclick="copy('Sard')">Sard</button>
+            </div>
+
+            <div class="telemon-card flying">
+                <img src="aerius.jpeg" alt="aerius.jpeg"/>
+                <button type="button" onclick="copy('Aerius')">Aerius</button>
+            </div>
+
+            <div class="telemon-card flying">
+                <img src="aros.webp" alt="aros.webp"/>
+                <button type="button" onclick="copy('Aros')">Aros</button>
+            </div>
+
+            <div class="telemon-card flying">
+                <img src="skyrage.jpeg" alt="skyrage.jpeg"/>
+                <button type="button" onclick="copy('Skyrage')">Skyrage</button>
+            </div>
+
+            <div class="telemon-card dragon">
+                <img src="obsidianon.jpeg" alt="obsidianon.jpeg"/>
+                <button type="button" onclick="copy('Obsidianon')">Obsidianon</button>
+            </div>
+
+            <div class="telemon-card dragon">
+                <img src="darkgon.jpeg" alt="darkgon.jpeg"/>
+                <button type="button" onclick="copy('darkgon.jpeg')">darkgon.jpeg</button>
+            </div>
+
+            <div class="telemon-card dragon">
+                <img src="vielhowl.jpeg" alt="vielhowl.jpeg"/>
+                <button type="button" onclick="copy('Vielhowl')">Vielhowl</button>
+            </div>
+
+            <div class="telemon-card dragon">
+                <img src="shekagon.jpeg" alt="shekagon.jpeg"/>
+                <button type="button" onclick="copy('Shekagon')">Shekagon</button>
+            </div>
+
+            <div class="telemon-card dragon">
+                <img src="gloomon.jpeg" alt="gloomon.jpeg"/>
+                <button type="button" onclick="copy('Gloomon')">Gloomon</button>
+            </div>
+
+            <div class="telemon-card dragon">
+                <img src="nineeye.jpeg" alt="nineeye.jpeg"/>
+                <button type="button" onclick="copy('Nineeye')">Nineeye</button>
+            </div>
+
+            <div class="telemon-card dragon">
+                <img src="ebanadon.jpeg" alt="ebanadon.jpeg"/>
+                <button type="button" onclick="copy('Ebanadon')">Ebanadon</button>
+            </div>
+
+            <div class="telemon-card ice">
+                <img src="frostbit.jpeg" alt="frostbit.jpeg"/>
+                <button type="button" onclick="copy('Frostbit')">Frostbit</button>
+            </div>
+
+            <div class="telemon-card ice">
+                <img src="froslet.jpeg" alt="froslet.jpeg"/>
+                <button type="button" onclick="copy('Froslet')">Froslet</button>
+            </div>
+
+            <div class="telemon-card ice">
+                <img src="crystela.jpeg" alt="crystela.jpeg"/>
+                <button type="button" onclick="copy('Crystela')">Crystela</button>
+            </div>
+
+            <div class="telemon-card ice">
+                <img src="flarepup.jpeg" alt="flarepup.jpeg"/>
+                <button type="button" onclick="copy('Flarepup')">Flarepup</button>
+            </div>
+
+            <div class="telemon-card ice">
+                <img src="glacier.jpeg" alt="glacier.jpeg"/>
+                <button type="button" onclick="copy('Glacier')">Glacier</button>
+            </div>
+
+            <div class="telemon-card ice">
+                <img src="igon.jpeg" alt="igon.jpeg"/>
+                <button type="button" onclick="copy('Igon')">Igon</button>
+            </div>
+
+            <div class="telemon-card ice">
+                <img src="xmirwolf.jpeg" alt="xmirwolf.jpeg"/>
+                <button type="button" onclick="copy('Xmirwolf')">Xmirwolf</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="pummelex.jpeg" alt="pummelex.jpeg"/>
+                <button type="button" onclick="copy('Pummelex')">Pummelex</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="wrestrion.jpeg" alt="wrestrion.jpeg"/>
+                <button type="button" onclick="copy('Wrestrion')">Wrestrion</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="brawlka.jpeg" alt="brawlka.jpeg"/>
+                <button type="button" onclick="copy('Brawlka')">Brawlka</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="powchimp.jpeg" alt="powchimp.jpeg"/>
+                <button type="button" onclick="copy('Powchimp')">Powchimp</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="jaberoo.jpeg" alt="jaberoo.jpeg"/>
+                <button type="button" onclick="copy('Jaberoo')">Jaberoo</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="misspunch.jpeg" alt="misspunch.jpeg"/>
+                <button type="button" onclick="copy('Misspunch')">Misspunch</button>
+            </div>
+
+            <div class="telemon-card fighting">
+                <img src="hitpunch.jpeg" alt="hitpunch.jpeg"/>
+                <button type="button" onclick="copy('Hitpunch')">Hitpunch</button>
+            </div>
+
+            <div class="telemon-card psychic">
+                <img src="wisplin.webp" alt="wisplin.webp"/>
+                <button type="button" onclick="copy('Wisplin')">Wisplin</button>
+            </div>
+
+            <div class="telemon-card psychic">
+                <img src="minceras.jpeg" alt="minceras.jpeg"/>
+                <button type="button" onclick="copy('Minceras')">Minceras</button>
+            </div>
+
+            <div class="telemon-card psychic">
+                <img src="lumor.jpeg" alt="lumor.jpeg"/>
+                <button type="button" onclick="copy('lumor')">lumor</button>
+            </div>
+
+            <div class="telemon-card psychic">
+                <img src="psygon.jpeg" alt="psygon.jpeg"/>
+                <button type="button" onclick="copy('Psygon')">Psygon</button>
+            </div>
+
+            <div class="telemon-card psychic">
+                <img src="psytle.jpeg" alt="psytle.jpeg"/>
+                <button type="button" onclick="copy('Psytle')">Psytle</button>
+            </div>
+
+            <div class="telemon-card psychic">
+                <img src="psykerra.jpeg" alt="psykerra.jpeg"/>
+                <button type="button" onclick="copy('Psykerra')">Psykerra</button>
+            </div>
+
+            <div class="telemon-card psychic">
+                <img src="orionith.jpeg" alt="orionith.jpeg"/>
+                <button type="button" onclick="copy('Orionith')">Orionith</button>
+            </div>
+
+            <div class="telemon-card poison">
+                <img src="toxpea.jpeg" alt="toxpea.jpeg"/>
+                <button type="button" onclick="copy('Toxpea')">Toxpea</button>
+            </div>
+
+            <div class="telemon-card poison">
+                <img src="venora.jpeg" alt="venora.jpeg"/>
+                <button type="button" onclick="copy('Venora')">Venora</button>
+            </div>
+
+            <div class="telemon-card poison">
+                <img src="mirepuff.jpeg" alt="mirepuff.jpeg"/>
+                <button type="button" onclick="copy('Mirepuff')">Mirepuff</button>
+            </div>
+
+            <div class="telemon-card poison">
+                <img src="toxypyre.jpeg" alt="toxypyre.jpeg"/>
+                <button type="button" onclick="copy('Toxypyre')">Toxypyre</button>
+            </div>
+
+            <div class="telemon-card poison">
+                <img src="noxblib.jpeg" alt="noxblib.jpeg"/>
+                <button type="button" onclick="copy('Noxblib')">Noxblib</button>
+            </div>
+
+            <div class="telemon-card poison">
+                <img src="spoogoo.jpeg" alt="spoogoo.jpeg"/>
+                <button type="button" onclick="copy('Spoogoo')">Spoogoo</button>
+            </div>
+
+            <div class="telemon-card poison">
+                <img src="venimite.jpeg" alt="venimite.jpeg"/>
+                <button type="button" onclick="copy('venimite')">venimite</button>
+            </div>
+
+            <div class="telemon-card bug">
+                <img src="silket.jpeg" alt="silket.jpeg"/>
+                <button type="button" onclick="copy('Silket')">Silket</button>
+            </div>
+
+            <div class="telemon-card bug">
+                <img src="tickzy.jpeg" alt="tickzy.jpeg"/>
+                <button type="button" onclick="copy('Tickzy')">Tickzy</button>
+            </div>
+
+            <div class="telemon-card bug">
+                <img src="buzzly.jpeg" alt="buzzly.jpeg"/>
+                <button type="button" onclick="copy('Buzzly')">Buzzly</button>
+            </div>
+
+            <div class="telemon-card bug">
+                <img src="weblly.jpeg" alt="weblly.jpeg"/>
+                <button type="button" onclick="copy('Weblly')">Weblly</button>
+            </div>
+
+            <div class="telemon-card bug">
+                <img src="nutlly.jpeg" alt="nutlly.jpeg"/>
+                <button type="button" onclick="copy('nutlly')">nutlly</button>
+            </div>
+
+            <div class="telemon-card ground">
+                <img src="golemar.jpeg" alt="golemar.jpeg"/>
+                <button type="button" onclick="copy('Golemar')">Golemar</button>
+            </div>
+
+            <div class="telemon-card ground">
+                <img src="lithon.jpeg" alt="lithon.jpeg"/>
+                <button type="button" onclick="copy('Lithon')">Lithon</button>
+            </div>
+
+            <div class="telemon-card ground">
+                <img src="mudragon.jpeg" alt="mudragon.jpeg"/>
+                <button type="button" onclick="copy('Mudragon')">Mudragon</button>
+            </div>
+
+            <div class="telemon-card ground">
+                <img src="gaialith.jpeg" alt="gaialith.jpeg"/>
+                <button type="button" onclick="copy('Gaialith')">Gaialith</button>
+            </div>
+
+            <div class="telemon-card ground">
+                <img src="grubble.jpeg" alt="grubble.jpeg"/>
+                <button type="button" onclick="copy('Grubble')">Grubble</button>
+            </div>
+
+            <div class="telemon-card ground">
+                <img src="bulltrex.jpeg" alt="bulltrex.jpeg"/>
+                <button type="button" onclick="copy('Bulltrex')">Bulltrex</button>
+            </div>
+
+            <div class="telemon-card ground">
+                <img src="trimor.jpeg" alt="trimor.jpeg"/>
+                <button type="button" onclick="copy('Trimor')">Trimor</button>
+            </div>
+
+            <div class="telemon-card fairy">
+                <img src="devdrop.jpeg" alt="devdrop.jpeg"/>
+                <button type="button" onclick="copy('Devdrop')">Devdrop</button>
+            </div>
+
+            <div class="telemon-card fairy">
+                <img src="pixopup.jpeg" alt="pixopup.jpeg"/>
+                <button type="button" onclick="copy('Pixopup')">Pixopup</button>
+            </div>
+
+            <div class="telemon-card fairy">
+                <img src="sprinklet.jpeg" alt="sprinklet.jpeg"/>
+                <button type="button" onclick="copy('Sprinklet')">Sprinklet</button>
+            </div>
+
+            <div class="telemon-card fairy">
+                <img src="lilimoon.jpeg" alt="lilimoon.jpeg"/>
+                <button type="button" onclick="copy('Lilimoon')">Lilimoon</button>
+            </div>
+
+            <div class="telemon-card fairy">
+                <img src="gleamora.jpeg" alt="gleamora.jpeg"/>
+                <button type="button" onclick="copy('Gleamora')">Gleamora</button>
+            </div>
+
+            <div class="telemon-card fairy">
+                <img src="frostela.jpeg" alt="frostela.jpeg"/>
+                <button type="button" onclick="copy('Frostela')">Frostela</button>
+            </div>
+
+            <div class="telemon-card fairy">
+                <img src="lumiflare.jpeg" alt="lumiflare.jpeg"/>
+                <button type="button" onclick="copy('Lumiflare')">Lumiflare</button>
+            </div>
+
+            <div class="telemon-card steel">
+                <img src="chromite.jpeg" alt="chromite.jpeg"/>
+                <button type="button" onclick="copy('Chromite')">Chromite</button>
+            </div>
+
+            <div class="telemon-card steel">
+                <img src="obliviron.jpeg" alt="obliviron.jpeg"/>
+                <button type="button" onclick="copy('Obliviron')">Obliviron</button>
+            </div>
+
+            <div class="telemon-card steel">
+                <img src="oblivironx.jpeg" alt="oblivironx.jpeg"/>
+                <button type="button" onclick="copy('Obliviron X')">Obliviron X</button>
+            </div>
+
+            <div class="telemon-card steel">
+                <img src="oblivirony.jpeg" alt="oblivirony.jpeg"/>
+                <button type="button" onclick="copy('Obliviron Y')">Obliviron Y</button>
+            </div>
+
+            <div class="telemon-card steel">
+                <img src="oblivironz.jpeg" alt="oblivironz.jpeg"/>
+                <button type="button" onclick="copy('Obliviron Z')">Obliviron Z</button>
+            </div>
+
+            <div class="telemon-card steel">
+                <img src="glimmer.jpeg" alt="glimmer.jpeg"/>
+                <button type="button" onclick="copy('Glimmer')">Glimmer</button>
+            </div>
+
+            <div class="telemon-card steel">
+                <img src="plasteelus.jpeg" alt="plasteelus.jpeg"/>
+                <button type="button" onclick="copy('Plasteelus')">Plasteelus</button>
+            </div>
+
+
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
